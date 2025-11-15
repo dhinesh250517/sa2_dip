@@ -2,10 +2,8 @@ import argparse
 import os
 import sys
 import traceback
-
 import cv2
 import numpy as np
-
 def save_same_folder(inp_path, img, suffix):
     base, ext = os.path.splitext(inp_path)
     out_path = f"{base}_{suffix}{ext}"
@@ -13,18 +11,12 @@ def save_same_folder(inp_path, img, suffix):
     if not ok:
         raise IOError(f"Failed to write output image to {out_path}")
     return out_path
-
 def run_kmeans(img, K=4, attempts=10, max_samples=1000000):
     h, w = img.shape[:2]
     n_pixels = h * w
-
-    # reshape pixels to list of samples
     data = img.reshape((-1, 3)).astype(np.float32)
-
-    # If image is extremely large, sample pixels to speed up kmeans initialization.
     sampled_idx = None
     if n_pixels > max_samples:
-        # choose a representative random sample for clustering initialization
         rng = np.random.default_rng(seed=42)
         sampled_idx = rng.choice(n_pixels, size=max_samples, replace=False)
         data_sample = data[sampled_idx]
@@ -32,7 +24,6 @@ def run_kmeans(img, K=4, attempts=10, max_samples=1000000):
     else:
         data_sample = data
 
-    # Basic validation
     if K <= 0:
         raise ValueError("K must be > 0")
     if data_sample.shape[0] < K:
@@ -40,7 +31,6 @@ def run_kmeans(img, K=4, attempts=10, max_samples=1000000):
 
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 50, 0.2)
 
-    # cv2.kmeans may raise cv2.error on failure, so keep in try
     try:
         compactness, labels_sample, centers = cv2.kmeans(
             data_sample,
@@ -82,7 +72,6 @@ def run_kmeans(img, K=4, attempts=10, max_samples=1000000):
     centers_uint8 = np.clip(centers, 0, 255).astype(np.uint8)
     segmented = centers_uint8[labels].reshape((h, w, 3))
     return segmented
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', '-i', default='DSC_0237.JPG', help='Input image path')

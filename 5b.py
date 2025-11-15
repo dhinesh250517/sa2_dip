@@ -11,7 +11,7 @@ def save_same_folder(inp_path, pil_img, suffix, ext=None, **save_kwargs):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('--input', '-i', default='DSC_0237.JPG')
+    p.add_argument('--input', '-i', default='DSC_0176.JPG')
     p.add_argument('--jpeg_quality', type=int, default=95)
     args = p.parse_args()
 

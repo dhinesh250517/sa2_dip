@@ -2,11 +2,9 @@ import cv2
 import os
 import numpy as np
 
-# --------------------------------------------------------
-# 👉 EDIT ONLY THESE TWO LINES
+
 IMAGE_FILE = "input.png"              # your main image
 TEMPLATE_FILE = "template.png"           # your template image
-# --------------------------------------------------------
 
 METHOD = cv2.TM_CCOEFF_NORMED   # matching method
 THRESHOLD = 0.8                 # match threshold (0-1, higher = stricter)
