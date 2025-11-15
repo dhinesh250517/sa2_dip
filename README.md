@@ -35,6 +35,12 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/3b0ae5e2-a4d0-452f-aa32-ee93ad3d2131" width="200">
+<img src="https://github.com/user-attachments/assets/e4d64e21-e8b5-44d0-81f9-bdff09d79eaf" width="200">
+<img src="https://github.com/user-attachments/assets/ed8783f5-c665-4744-b980-4a3409f843c1" width="200">
+
+
+
 ## b.Write a Python program to detect image boundaries using morphological operations. (15)
 ```
 import argparse, os
@@ -68,6 +74,9 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/2ec8e345-6a3d-4548-aa5f-4f6fa22c45ab" width="200">
+<img src="https://github.com/user-attachments/assets/c7fc424f-5642-4a86-9ba0-f5cc5703d4fd" width="200">
+<img src="https://github.com/user-attachments/assets/64d960aa-fbdb-450d-9219-59be40897430" width="200">
 
 
 # 2.Feature Detection:
@@ -106,6 +115,10 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/20d1b313-20ba-4e0f-ac76-934d7b3167c1" width="200">
+
+
+
 ## b.Write a Python program to detect and draw contours in an image. (15)
 ```
 import argparse, os
@@ -142,6 +155,10 @@ if __name__ == '__main__':
 ```
 
 ### output:
+<img src="https://github.com/user-attachments/assets/7ca62c8e-c126-423b-86d0-db7f32e9036d" width="200">
+<img src="https://github.com/user-attachments/assets/0c2d86b9-af41-4384-8cd4-a01bcf41b972" width="200">
+
+
 # 3.Image Segmentation:
 ## a.How would you perform image segmentation using thresholding in Python? (5)
 ```
@@ -172,6 +189,12 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/1f867713-d062-4fac-b5d3-24196a6a39c7" width="200">
+<img src="https://github.com/user-attachments/assets/ec775dbe-e827-43d0-a2eb-6a65d892960b" width="200">
+<img src="https://github.com/user-attachments/assets/d9ee30bc-be2e-4951-b0c2-e731be63c641" width="200">
+
+
+
 ## b.Write a Python program to implement k-means clustering for image segmentation. (15)
 ```
 import argparse
@@ -276,6 +299,9 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/721ab0e5-1e06-42f2-8bb7-edf56abfc7bc" width="200">
+<img src="https://github.com/user-attachments/assets/55b80cf7-1f2e-4186-a2fb-dee1ef616e33" width="200">
+
 # 4.Object Detection:
 ## a.How can you use template matching in Python to detect objects in an image? (5)
 ```
@@ -342,6 +368,10 @@ if __name__ == "__main__":
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/a3e39561-bf59-453b-acb9-15b4b6e52654" width="200">
+
+
+
 ## b.Write a Python program to detect faces in an image using OpenCV’s pre-trained models. (15)
 ```
 
@@ -383,6 +413,8 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/88691fae-90d7-4697-87ae-46173b10a367" width="200">
+
 # 5.Image Compression:
 ## a.How would you compress an image using Discrete Cosine Transform (DCT) in Python? (5)
 ```
@@ -443,6 +475,9 @@ if __name__ == '__main__':
 
 ```
 ### output:
+<img src="https://github.com/user-attachments/assets/b131940a-8717-4990-a98c-dc6146353dfa" width="200">
+
+
 ## b.Write a Python program to save an image with reduced file size without losing quality. (15)
 ```
 
@@ -478,3 +513,10 @@ if __name__ == '__main__':
 
 ```
 ### output:
+
+<img src="https://github.com/user-attachments/assets/37034df4-c900-4cc4-9c7d-1c8630b3c75f" width="200">
+
+
+
+
+
